@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
+/*@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");*/
 :root
 {
     --left-bg-color:rgba(87,84,236,0.7);
@@ -42,6 +43,7 @@ body
     font-family: inherit;
     font-size: 1.2rem;
     padding: 1.5rem 3rem;
+    cursor: pointer;
 }
 
 .btn:focus{
@@ -51,7 +53,12 @@ body
     opacity: 0.8;
     transform: scale(1.2);
 }
-
+button{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 
 @media(max-width: 480px)        /*para ecras mais pequenos*/

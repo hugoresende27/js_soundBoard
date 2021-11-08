@@ -8,8 +8,30 @@ sons.forEach (som =>
 
         btn.addEventListener('click', () => 
         {
+            stopMusica()
             document.getElementById(som).play()
+
         })
 
         document.getElementById('botoes').appendChild(btn)
     })
+
+function stopMusica(){
+    sons.forEach ( som => {
+        const musica = document.getElementById(som)
+        musica.pause()
+        musica.currentTime =0;
+    })
+}
+
+function mute(){
+    sons.forEach ( som => {
+        const musica = document.getElementById(som)
+        musica.pause()
+    })
+}  
+
+function myFunction(x) {
+    x.classList.toggle("fa-volume-up");
+  }
+   
