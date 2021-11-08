@@ -44,6 +44,14 @@ body
     padding: 1.5rem 3rem;
 }
 
+.btn:focus{
+    outline: none;
+}
+.btn:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
 
 
 @media(max-width: 480px)        /*para ecras mais pequenos*/

@@ -6,5 +6,10 @@ sons.forEach (som =>
         btn.classList.add('btn')
         btn.innerText = som 
 
+        btn.addEventListener('click', () => 
+        {
+            document.getElementById(som).play()
+        })
+
         document.getElementById('botoes').appendChild(btn)
     })
